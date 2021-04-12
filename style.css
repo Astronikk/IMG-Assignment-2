@@ -1,0 +1,356 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    
+}
+.logoF{
+    max-width: 70px; 
+    margin-top: 5px;
+    margin-left: 50px;
+
+}
+
+.menu{
+    margin-left: 55vw;    
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    margin:0 5px;
+    line-height: 70px;
+    margin-top: 0;
+}
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle{
+    display: none;
+}
+
+@media only screen and (max-width: 1166px){
+    label{
+        display: block;
+        cursor: pointer;
+        float: right;
+        margin-left: auto;
+
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+        
+    }
+    .menu a {
+        display: block;
+        margin: 0;
+        border-bottom: 1px solid gray;
+        background-color: white;
+    }
+    #toggle:checked + .menu{
+        display: block;
+    }
+}
+.pageone{
+    background-image: url("https://channeli.in//static/maintainer_site/background.svg");
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;     
+}
+#pagetwo{
+      background-color: #ffffff;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+}
+
+.columnleft{
+         margin-top: 14%;
+         font-family: 'Playfair Display';
+         height: 100%;
+         align-items: center;
+}
+   
+.para{
+   color: #ffffff;
+   padding-right: 1.2em;
+   font-size: 20px;
+   line-height: 2;
+   width:40%;
+   font-family: lato;
+}
+   
+.l1{
+     flex : 50%;
+     height : 70px;
+     background-color:whitesmoke;
+     position:sticky;
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+     margin-top: 0px;
+    }
+    /*  
+.navigation{
+     flex : 25%;
+     height : 70px;
+     background-color:whitesmoke;
+     display:flex;
+     flex-direction: row;
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+    }
+    */
+    /*  
+.nav-button{
+    flex-grow: 2;
+    height :70px;
+    text-align: right;
+    padding-top: 25px;
+    color: #293a52;
+    flex-shrink: initial;
+    }
+    */
+/*  
+    .nav-list{
+        background: white;
+        margin:0;
+        padding:.4rem 0;
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: sticky;
+        top:0px;
+    }
+    .nav-item{
+        list-style: none;
+        margin-right:1rem;
+        margin-inline: 0px;
+    }
+    .nav-item a{
+        text-decoration: none;
+        color:black;
+        font-size: 20px;
+    }
+    
+    .nav-item:first-child{
+        margin-right:auto;
+        margin-left:2.9rem;
+    }
+   
+    .nav-item:last-child{
+        margin-right:4rem;
+    }
+    .items a:hover{
+        opacity: 0.5;
+    }
+    */
+
+.container{
+      display:flex;
+     flex-direction: row;     
+    }
+.columnleft{
+    flex : 70%;
+    height:70vh;
+    margin-top:40vh;
+    margin-left: 10%;
+    }
+.columnright{
+    flex : 20%;
+    height:70vh;
+    margin-top:30vh;
+    }
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    }
+.link{ 
+       font-size: 14px;
+       padding-right:40px ;padding-left: 40px; padding-top: 30px; 
+       width: 165px;
+       text-align: right;
+       margin-left: 50px;    
+    }
+.link1{
+    flex-grow: 2;
+   }
+.link2{
+    flex-grow: 2;
+   }
+.container3{
+    display: flex;
+    flex-wrap: wrap ;
+    flex-grow: 2; 
+    }
+    
+#projectpage{
+        display: flex;
+    flex-wrap: wrap;
+    }
+.link3{
+    flex-grow: 2;
+   }
+.link4{
+    flex-grow: 2;
+   }
+.third{
+    background-color:#ebebeb;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+.container4{ 
+       display: flex;
+       flex-wrap: wrap;
+ }
+.blogimage{
+    flex-grow: 2;
+}
+.blogdata{
+    flex-grow: 2;
+    margin-top:10%;
+}
+.container5{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.contact{
+flex-grow: 2;
+}
+.about{
+flex-grow: 2;
+}
+#fourth{
+    flex-wrap: wrap-reverse;
+    background-color: #293a52;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color:#ffffff;
+}
+a {
+    background-color: transparent;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    font-family: typoPRO bebas neue;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+u{
+    text-decoration: none;
+}
+.heading{
+    font-size: 32px;
+    font-family: 'Playfair Display';
+    border-bottom: 0.2em #f8d16c solid;
+    display: inline-block;
+    padding-left: 0.8em;
+    color: #3b3736;
+    padding-right: 0.8em;
+    padding-bottom: 0.3em;
+    margin: 0.5em 0 0.5em 0 !important;
+}  
+.btn {
+    background-color: #293a52;
+    border: none;
+    color: white;
+    padding: 5px;
+    size: 5px;
+    margin-right: 1.3em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:#f8d06c;
+} 
+
+.btn2{
+    padding: 0.5em 1em;
+    background-color: white;
+    font-family: typoPRO bebas neue;
+    font-size: 1.5rem;
+    border: 2px solid #263146;
+    align-content: center;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    background-color: #f8d06c
+}
+.btn3{
+    padding: 0.5em 1em;
+    font-family: typoPRO bebas neue;                        
+    background-color:#ebebeb ;
+    font-size: 1.5rem;
+    border: 2px solid #263146;
+    align-content: center;
+    cursor: pointer;
+}
+
+.btn3:hover{
+    background-color: #f8d06c
+}
+/*  
+.ui.container{
+    width: 1127px;
+margin-left: auto ;
+margin-right: auto ;
+padding-left: 0.5vw;
+font-family: lato;
+}
+*/
+.JB{
+    width: 89.8%;
+background-color: #263146;
+color: #ffffff;
+min-height: 6%;
+padding-top: 0.3vw;
+padding-bottom: 0.3vw;
+padding-left: 10vw;
+display: flex;
+align-items: center;
+font-family: lato;
+}
+
+@font-face {
+    font-family: typoPRO bebas neue;
+    src: url(https://cdn.jsdelivr.net/npm/@typopro/web-bebas-neue@3.7.5/TypoPRO-BebasNeue.min.css);
+}
+@font-face {
+    font-family: lato;
+    src: url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+}
