@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+    font-family: typoPRO bebas neue;
+    src: url(https://cdn.jsdelivr.net/npm/@typopro/web-bebas-neue@3.7.5/TypoPRO-BebasNeue.min.css);
+}
+body{
+    margin:0;
+}
+
+*{
+    font-family: typoPRO bebas neue;
+    font-size: 20px;
+}
+.nav-item{
+    font-family: typoPRO bebas neue;
+    font-size: 20px;
+}
+@media only screen and (min-width:1100px){
+    .nav-list{
+        background: white;
+        margin:0;
+        padding:0.3rem 0;
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        box-shadow: 0px 0px 10px #f0f7f8;
+        position: sticky;
+        top:0px;
+    }
+    .nav-item{
+        list-style: none;
+        margin-right:2rem;
+    }
+    .nav-item a{
+        text-decoration: none;
+        color:black;
+    }
+    .nav-item:first-child{
+        margin-right:auto;
+        margin-left:4rem;
+    }
+    .nav-item:last-child{
+        margin-right:4rem;
+    }
+    .items a:hover{
+        opacity: 0.5;
+    }
+    #toggle{
+        display: none;
+    }
+    label{
+        margin: 0px 40px 0px 0px;
+        font-size: 26px;
+        line-height: 70px;
+        text-align: right;
+        display:none;
+    }
+    .nav{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1100px){
+    navbar{
+        display:flex;
+        justify-content: flex-end;
+        position: sticky;
+        top:0;
+        background: white;
+    }
+    label{
+        display: block;
+        cursor: pointer;
+        margin: 0px 40px 0px 0px;
+        font-size: 26px;
+        line-height: 70px;
+        text-align: right;
+    }
+    #toggle{
+        display:none;
+    }
+    .nav-list{
+        width: 100%;
+        display:none;
+        text-align: center;
+        list-style: none;
+    }
+    .nav-item a{
+        display: block;
+    }
+    .nav{
+        margin-right: 80%;
+        position: sticky;
+        left:20px;
+        padding:1rem 0;
+    }
+}
+
+
+#b1{
+    background-image:url("https://cdn-images-1.medium.com/max/1024/1*cM7yY5kyzvtPmAuNn9HUAg.jpeg");
+}
+#b2{
+    background-image:url("https://cdn-images-1.medium.com/max/1024/1*A96kbftJ5TzSwqDaJYatGw.png")
+}
+#b3{
+    background-image:url("https://cdn-images-1.medium.com/max/1024/1*nhjs_X32FXtBHjBjDFr3cw.png")
+}
+#b4{
+    background-image:url("https://cdn-images-1.medium.com/max/1024/0*lnVPgiG-45T4tsBW")
+}
+#b5{
+    background-image:url("https://cdn-images-1.medium.com/max/1024/1*pP6T-eS8bX0ZtXpRTc2vdg.jpeg")
+}
+#b6{
+    background-image:url("https://cdn-images-1.medium.com/max/1024/1*2soSYXqsaPzpTZ97FGOsEQ.png")
+}
+.images{
+    width:100%;
+    height:200px;
+    background-position: center;
+    background-size:cover;
+}
+.part{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+}
+.blogs{
+    border:1px solid #b6b2b2;
+    border-radius: 2% 2% 2% 2%;
+    margin:10px;
+}
+
+.date{
+    margin-right:10px !important;
+    margin-left: auto;
+    float: inline-end;
+}
+.medium{
+    text-align: center;
+    font-size:20px;
+    margin:25px;
+    
+}
+.nav-item:first-child{
+    margin-right:auto;
+    margin-left:12rem;
+    position: sticky;
+    left:0;
+}
+.bloga{
+    text-decoration: none;
+    color:black;
+}
+.blogs:hover{
+    margin-top:5px;
+    margin-bottom:15px;
+
+}
+.items a{
+    color: black;
+    text-decoration: none;
+}
+@media only screen and (min-width:500px){
+    .active{
+        border-bottom: 2px solid black;
+    }
+}
+.main{
+    min-height: calc(100vh - 2rem);
+}
+.font{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding-left: 20px;
+}
+footer{
+    font-size:14px !important;
+    line-height: 20px !important;
+}
+@media only screen and (max-width:1122px){
+    footer{
+        padding-left:8%;
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .blogs{
+        width:calc(31.5% - 1.9em);
+    }
+}
+@media only screen and (max-width: 650px){
+    .blogs{
+        width:85vw;
+    }
+}
+.author{
+    border-top:1px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.mlogo:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+@media only screen and (max-width:1200px) and (min-width:650px){
+    .blogs{
+        width:calc(50% - 2em);
+    }
+}
+h3{
+    padding-right: 30px;
+}
+.author{
+    display: flex;
+    color:#999999;
+    height:25px;
+}
+h3{
+    height: 40px;
+}
+i{
+    opacity:0.7;
+}
+@media only screen and (max-width:1122px){
+    footer{
+        padding-left:8%;
+        margin-top: 10px;
+    }
+}
+footer{
+    background-color: #263146;
+    color:white;
+    margin: 0% !important;
+    padding:10px 50px;
+    padding-left:5vw !important;
+}
+.nav-item:first-child{
+    margin-left: 60px;
+}
+navbar{
+    margin-bottom: 10px;
+}
